@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__wrapper__logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <nav class="header__wrapper__nav js-nav">
+                <div class="header__wrapper__nav__closemenu" onclick="closeNav()"><img src="images/icon-close-menu.svg" alt="">
+                </div>
+                
+                <ul class="header__wrapper__nav__links">
+                    <li><a href="#" class="header__wrapper__nav__links__link js-link" onclick="activeState(0)">Features
+                        <img src="images/icon-arrow-down.svg" alt="">
+                    </a>
+                        <ul class="header__wrapper__nav__links__link__sublink">
+                            <li><a href="#">
+                                <img src="images/icon-todo.svg" alt="">
+                                Todo List</a></li>
+                            <li><a href="#">
+                                <img src="images/icon-calendar.svg" alt="">
+                                Calendar</a></li>
+                            <li><a href="#">
+                                <img src="images/icon-reminders.svg" alt="">
+                                Reminders</a></li>
+                            <li><a href="#">
+                                <img src="images/icon-planning.svg" alt="">
+                                Planning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="header__wrapper__nav__links__link js-link" onclick="activeState(1)">Company
+                        <img src="images/icon-arrow-down.svg" alt="">
+                    </a>
+                        <ul class="header__wrapper__nav__links__link__sublink">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="header__wrapper__nav__links__link">Careers</a></li>
+                    <li><a href="#" class="header__wrapper__nav__links__link">About</a></li>
+                </ul>
+
+                <ul class="header__wrapper__nav__login">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#" class="primary">Register</a></li>
+                </ul>
+            </nav>
+            <div class="header__wrapper__menu" onclick="openNav()">
+                <img src="images/icon-menu.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__wrapper__content">
+                <div class="main__wrapper__content__text">
+                    <h1>Make remote work</h1>
+                    <p>Get your team in sync, no matter your location. Srreamline processes, create team rituals, and watch productivity soar</p>
+                    <a href="#" class="primary">Learn more</a>
+                </div>
+
+                <div class="main__wrapper__content__sponsor">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img src="images/client-audiophile.svg" alt="">
+                    <img src="images/client-meet.svg" alt="">
+                    <img src="images/client-maker.svg" alt="">
+                </div>
+            </div>
+            <div class="main__wrapper__image">
+                <picture>
+                    <source media="(max-width:920px)" srcset="images/image-hero-mobile.png">
+                    <img src="images/image-hero-desktop.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
